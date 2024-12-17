@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.9;
+}
+
+/* Header and Navbar styling */
+header {
+  background-color: #89A8B2;
+  color: #fff;
+  padding: 20px;
+  font-family: "papyrus", "Lucida Handwriting", "Lucida Console";
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #E5E1DA;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #819da6;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li:hover > a {
+  background-color: #89a8b230;
+}
+
+/* Dropdown menu */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #89A8B2;
+  min-width: 150px;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 100%;
+}
+
+nav ul li ul li a {
+  padding: 10px;
+  color: #fff;
+  display: block;
+}
+
+nav ul li ul li a:hover {
+  background-color:#819da6;
+}
+
+/* Parallax background styling */
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 350px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Section styles */
+.home {
+  background-image: url('F3.jpg'); 
+}
+
+.about {
+  background-image: url('F2.jpg');
+}
+
+.services {
+  background-image: url('F1.jpg');
+}
+
+.contact {
+  background-image: url('F5.jpg');
+}
+
+
+.parallax h2 {
+  padding-top: 125px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  font-family: "fantasy";
+}
+
+/* Regular content sections */
+.content {
+  padding: 50px;
+  background-color: #F1F0E8;
+  color: #333;
+}
+
+.content p {
+  font-size: 18px;
+  text-indent: 50px;
+}
+
+.home h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: "Lucida Handwriting", "Lucida Console","papyrus";
+    animation-name: Colorchange;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes Colorchange {
+    0%   {color: #8174A0;}
+    25%  {color: #A888B5;}
+    50%  {color: #EFB6C8;}
+    100% {color: #FFD2A0;}
+  }
+  
+
+.content h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-family: "papyrus", "Lucida Handwriting", "Lucida Console";
+}
+
+/* Footer styles */
+footer {
+  background-color: #89A8B2;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1em;
+  position: relative;
+}
+
+footer p {
+  margin: 5px 0;
+}
